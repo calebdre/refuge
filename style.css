@@ -55,8 +55,16 @@ body {
 	display     : inline-block;
 }
 
+#typeform-buttons {
+	padding : 50px 0;
+}
+
+#typeform-buttons > p {
+	color     : #FFFFFF;
+	font-size : 1.2em;
+}
+
 #typeform-buttons > button {
-	margin           : 50px 0;
 	background-color : #115D95;
 	border           : none;
 	color            : white;
@@ -75,8 +83,15 @@ body {
 }
 
 .types-section > .row {
-	padding    : 40px;
-	text-align : left;
+	padding            : 40px;
+	text-align         : left;
+	box-shadow         : none;
+	cursor             : pointer;
+	-webkit-transition : all 500ms;
+}
+
+.types-section > .row:hover {
+	box-shadow : 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .types-section > .row h1 {
