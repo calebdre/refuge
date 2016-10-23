@@ -1,0 +1,9 @@
+.container{
+	max-width: 70%;
+	margin:0 auto;
+}
+
+.section{
+	position:relative;
+	width:100%;
+}
