@@ -3,17 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="container">
-		<div class="section">
-			
+		<div class="section choose-language-section">
+			<div class="form-group">
+				<label for="language">Language</label>
+				<div class="input-group ui-widget">
+					<span class="input-group-addon">
+						<i class="fa fa-flag-o"></i>
+					</span>
+					<input id="language" type="text" class="form-control" placeholder="Language">
+				</div>
+			</div>
 		</div>
 	</div>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="app.js"></script>
+
+	<script>
+		var availableLanguages = [
+			"العربية",
+			"English",
+			"Español",
+			"Deutsche",
+			"اردو",
+			"हिंदी"
+		];
+
+		$('#language').autocomplete({
+			source: availableLanguages
+		});
+	</script>
 </body>
 </html>

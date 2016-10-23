@@ -7,3 +7,24 @@
 	position:relative;
 	width:100%;
 }
+
+ul{
+	padding:0;
+	list-style: none;
+}
+
+.ui-menu{
+	border-left:1px solid #bbb;
+	border-right:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+	width:517px;
+	padding:7px 5px 7px 10px;
+}
+
+.ui-menu-item{
+
+}
+
+.ui-helper-hidden-accessible{
+	display:none;
+}
